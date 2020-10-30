@@ -48,8 +48,9 @@ main {
 .list {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   transition: all 0.75s;
 }
 
@@ -95,12 +96,16 @@ main {
 }
 
 .btn-add {
-  /* left: 170px;
-  top: 10.5px; */
-  display: inline-block;
+  float: left;
+  left: 420px;
 }
 
 .delete-todo {
   border: none;
   background: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
 }
