@@ -97,7 +97,7 @@ main {
 
 .btn-add {
   float: left;
-  left: 420px;
+  left: 53vh;
 }
 
 .delete-todo {
@@ -108,4 +108,10 @@ main {
 .title {
   display: flex;
   justify-content: center;
+}
+
+li {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh;
 }
