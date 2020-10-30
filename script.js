@@ -1,7 +1,6 @@
 const inputTitle = document.querySelector("#myInput");
 const taskList = document.querySelector(".js-todo-list");
 const addBtn = document.querySelector(".btn-add");
-const deleteBtn = document.querySelector(".js-delete-todo");
 
 //This is the array that will hold the todo list items
 const todoItems = [];
@@ -31,7 +30,7 @@ function displayTodo(todo) {
     newListElement.innerHTML = `
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
-        <span class="text" >${todo.text}</span>
+         <div class="text" >${todo.text}</div>
         <button class="delete-todo js-delete-todo">X</button>
       
       `;
@@ -47,4 +46,8 @@ addBtn.addEventListener("click", function () {
   }
 });
 
-deleteBtn.addEventListener("click", function () {});
+const deleteBtn = document.querySelector(".js-delete-todo");
+
+deleteBtn.addEventListener("click", function () {
+  //why is this null??!?!?!?!!?!?!?!?!?!
+});
