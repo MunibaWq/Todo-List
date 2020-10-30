@@ -1,6 +1,6 @@
-const inputTitle = document.querySelector('#myInput');
-const taskList = document.querySelector('.savedTasks');
-const addBtn = document.querySelector('.btn-add');
+const inputTitle = document.querySelector("#myInput");
+const taskList = document.querySelector(".savedTasks");
+const addBtn = document.querySelector(".btn-add");
 
 //This is the array that will hold the todo list items
 const todoItems = [];
@@ -25,21 +25,21 @@ function displayTodo(todo) {
   //if so, assign 'done to 'isChecked'. Otherwise, assign an empty string
   const isChecked = todo.checked ? `done` : ``;
 
-  const newListElement = document.createElement('li');
+  const newListElement = document.createElement("li");
   if (isChecked !== `done`) {
     newListElement.innerHTML = `
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
         <span>${todo.text}</span>
-        <button class="delete-todo">X</button>
+        <button class="liList btn btn-delete">X</button>
       `;
   }
   taskList.appendChild(newListElement);
 }
-addBtn.addEventListener('click', function () {
+addBtn.addEventListener("click", function () {
   const titleMain = inputTitle.value.trim();
-  if (titleMain !== '') {
+  if (titleMain !== "") {
     addTodo(titleMain);
-    inputTitle.value = '';
+    inputTitle.value = "";
   }
 });
