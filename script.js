@@ -1,6 +1,7 @@
 const inputTitle = document.querySelector("#myInput");
 const taskList = document.querySelector(".js-todo-list");
 const addBtn = document.querySelector(".btn-add");
+const deleteBtn = document.querySelector(".js-delete-todo");
 
 //This is the array that will hold the todo list items
 const todoItems = [];
@@ -34,7 +35,6 @@ function displayTodo(todo) {
         <button class="delete-todo js-delete-todo">X</button>
       
       `;
-    // newListElement.add(".btn-delete");
   }
   taskList.appendChild(newListElement);
   taskList.classList.add("btn-delete");
@@ -46,3 +46,5 @@ addBtn.addEventListener("click", function () {
     inputTitle.value = "";
   }
 });
+
+deleteBtn.addEventListener("click", function () {});
