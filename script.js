@@ -30,8 +30,8 @@ function displayTodo(todo) {
     newListElement.innerHTML = `
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
-        <span>${todo.text}</span>
-        <button class="liList btn btn-delete">X</button>
+        <span >${todo.text}</span>
+        <button class="li btn btn-delete">X</button>
       `;
   }
   taskList.appendChild(newListElement);

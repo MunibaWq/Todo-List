@@ -45,8 +45,7 @@ main {
   /* display: flex; */
 }
 
-.list,
-.liList {
+.list {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -86,7 +85,7 @@ main {
   font-size: 1.8vh;
 
   border: none;
-  border-radius: 50rem;
+  border-radius: 20px;
 
   margin: 5vw;
   transform: translateX(-50%);
@@ -96,12 +95,12 @@ main {
 }
 
 .btn-add {
-  left: 52vh;
-  top: -1.6vw;
+  left: 370px;
+  top: 10.5px;
 }
 
 .btn-delete {
   background: none;
   border: none;
-  display: inline;
+  display: inline-block;
 }
