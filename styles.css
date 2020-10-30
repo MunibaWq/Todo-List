@@ -72,8 +72,8 @@ main {
   position: absolute;
   background: none;
 
-  top: 3rem;
-  left: 3rem;
+  /* top: 3rem;
+  left: 3rem; */
 
   /* display: inline-block; */
 
@@ -95,12 +95,12 @@ main {
 }
 
 .btn-add {
-  left: 370px;
-  top: 10.5px;
+  /* left: 170px;
+  top: 10.5px; */
+  display: inline-block;
 }
 
-.btn-delete {
-  background: none;
+.delete-todo {
   border: none;
-  display: inline-block;
+  background: none;
 }

@@ -1,5 +1,5 @@
 const inputTitle = document.querySelector("#myInput");
-const taskList = document.querySelector(".savedTasks");
+const taskList = document.querySelector(".js-todo-list");
 const addBtn = document.querySelector(".btn-add");
 
 //This is the array that will hold the todo list items
@@ -31,10 +31,13 @@ function displayTodo(todo) {
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
         <span >${todo.text}</span>
-        <button class="li btn btn-delete">X</button>
+        <button class="delete-todo js-delete-todo">X</button>
+      
       `;
+    // newListElement.add(".btn-delete");
   }
   taskList.appendChild(newListElement);
+  taskList.classList.add("btn-delete");
 }
 addBtn.addEventListener("click", function () {
   const titleMain = inputTitle.value.trim();
