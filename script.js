@@ -48,6 +48,7 @@ addBtn.addEventListener("click", function () {
 
 const deleteBtn = document.querySelector(".js-delete-todo");
 
-deleteBtn.addEventListener("click", function () {
-  //why is this null??!?!?!?!!?!?!?!?!?!
+taskList.addEventListener("click", (event) => {
+  console.log(`delete list item`);
+  // if(text.)
 });
