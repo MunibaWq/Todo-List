@@ -30,7 +30,7 @@ function displayTodo(todo) {
     newListElement.innerHTML = `
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
-         <div class="text" >${todo.text}</div>
+         <label class="text" >${todo.text}</label>
         <button class="delete-todo js-delete-todo">X</button>
       
       `;

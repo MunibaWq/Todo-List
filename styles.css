@@ -96,6 +96,14 @@ main {
   left: 5vh;
 }
 
+.btn-delete {
+  /* position: relative; */
+  /* display: inline; */
+
+  left: 5vh;
+  padding: 5px;
+}
+
 .delete-todo {
   border: none;
   background: none;
@@ -108,11 +116,19 @@ main {
 
 li {
   display: flex;
-  justify-content: space-evenly;
-  padding: 2vh;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  align-items: center;
+  margin-left: 10vh;
+  margin-right: -20px;
 }
 
 .text {
-  display: inline;
-  float: right;
+  margin-left: 10px;
+  margin-right: 20px;
+  /* margin-top: 20px; */
+  width: 80%;
+  word-wrap: break-word;
 }
