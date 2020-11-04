@@ -1,3 +1,4 @@
+let deleteBtn;
 const inputTitle = document.querySelector("#myInput");
 const taskList = document.querySelector(".js-todo-list");
 const addBtn = document.querySelector(".btn-add");
@@ -39,20 +40,21 @@ function displayTodo(todo) {
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
          <label class="text" >${todo.text}</label>
-        <button class="delete-todo js-delete-todo">X</button>
+        <button class="delete-todo js-delete-todo" onclick = "deleteItem (${todo.id})")>X</button>
       
       `;
   }
   taskList.appendChild(newListElement);
   taskList.classList.add("btn-delete");
+
+  deleteBtn = document.querySelector(".js-delete-todo");
+}
+function deleteItem(id) {
+  taskList.removeChild(id);
+  console.log(id);
 }
 
-// const deleteBtn = document.querySelector(".js-delete-todo");
-
-// //why is this null?
-// deleteBtn.addEventListener("click", function () {});
-
-taskList.addEventListener("click", (event) => {
-  console.log(`delete list item`);
-  // if(text.)
-});
+// taskList.addEventListener("click", function () {
+//   console.log(`delete list item`);
+//   // if(text.)
+// });
