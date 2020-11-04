@@ -40,17 +40,18 @@ function displayTodo(todo) {
         <input id= "${todo.id}" type="checkbox"/>
         <label for="${todo.id}" class = "tick "></label>
          <label class="text" >${todo.text}</label>
-        <button class="delete-todo js-delete-todo" onclick = "deleteItem (${todo.id})")>X</button>
+        <button class="delete-todo js-delete-todo" onclick = "deleteItem (${todo.id})">X</button>
       
       `;
   }
   taskList.appendChild(newListElement);
   taskList.classList.add("btn-delete");
 
-  deleteBtn = document.querySelector(".js-delete-todo");
+  // deleteBtn = document.querySelector(".js-delete-todo");
 }
+
 function deleteItem(id) {
-  taskList.removeChild(id);
+  taskList.removeChild(newListElement);
   console.log(id);
 }
 
