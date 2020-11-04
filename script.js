@@ -5,6 +5,14 @@ const addBtn = document.querySelector(".btn-add");
 //This is the array that will hold the todo list items
 const todoItems = [];
 
+addBtn.addEventListener("click", function () {
+  const titleMain = inputTitle.value.trim();
+  if (titleMain !== "") {
+    addTodo(titleMain);
+    inputTitle.value = "";
+  }
+});
+
 //this function will create a new todo object based on the
 //text that was entered in the text input, and push it into
 //the 'todoItems' array
@@ -38,15 +46,11 @@ function displayTodo(todo) {
   taskList.appendChild(newListElement);
   taskList.classList.add("btn-delete");
 }
-addBtn.addEventListener("click", function () {
-  const titleMain = inputTitle.value.trim();
-  if (titleMain !== "") {
-    addTodo(titleMain);
-    inputTitle.value = "";
-  }
-});
 
-const deleteBtn = document.querySelector(".js-delete-todo");
+// const deleteBtn = document.querySelector(".js-delete-todo");
+
+// //why is this null?
+// deleteBtn.addEventListener("click", function () {});
 
 taskList.addEventListener("click", (event) => {
   console.log(`delete list item`);
