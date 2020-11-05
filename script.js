@@ -35,6 +35,7 @@ function displayTodo(todo) {
   const isChecked = todo.checked ? `done` : ``;
 
   const newListElement = document.createElement("li");
+  //set attribute
   if (isChecked !== `done`) {
     newListElement.innerHTML = `
         <input id= "${todo.id}" type="checkbox"/>
@@ -51,7 +52,7 @@ function displayTodo(todo) {
 }
 
 function deleteItem(id) {
-  taskList.removeChild(newListElement);
+  taskList.removeChild(newListElement.id);
   console.log(id);
 }
 
